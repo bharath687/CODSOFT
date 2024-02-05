@@ -26,6 +26,8 @@ public class GuessNumber {
             } else if (userGuess == randomNumber) {
                 System.out.println("Yes! your Guess is correct");
                 System.out.println("Number of Guesses are : " + count);
+                lives--;
+//                System.out.println("Number of attempts left :"+lives--);
                 break;
             } else if (userGuess > randomNumber) {
                 System.out.println("No! your Guess is in-correct,userGuess number is too high. please try again");
@@ -34,12 +36,17 @@ public class GuessNumber {
             } else {
                 System.out.println("No! your Guess is in-correct,userGuess number is too low. please try again");
                 lives--;
-                if(lives==0){
-                    System.out.println("GAME OVER lives is:"+lives);
-                    break;
-                }
+
             }
+
+            System.out.println("Number of attempts left:" + lives);
         }
+        if (lives == 0) {
+            System.out.println("GAME OVER Number of attempts left is:" + lives);
+        }
+
+
+
         scan.close();
     }
 }
