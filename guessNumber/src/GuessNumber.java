@@ -37,7 +37,7 @@ public class GuessNumber {
         // create a random number within the specified range
         int randomNumber = rad.nextInt(100) + 1;//specified range, such as 1 to 100.
         int lives = 10; // max number of attempts for execution of program
-        System.out.println("The random number is:" + randomNumber);
+//        System.out.println("The random number is:" + randomNumber);
         //count variable used for number of iterations for Guesses correctly
         int count = 0;
         //Initialize user guess to a number outside the valid range
